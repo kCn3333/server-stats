@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  server-stats:
+    build: .
+    container_name: server-stats
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/sys:ro
