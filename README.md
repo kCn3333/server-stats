@@ -19,7 +19,7 @@
 
 ## Endpoints
 
-- `GET /metrics` – JSON metrics (cache-friendly)
+- `GET /metrics` – JSON metrics
 - `GET /badge.svg` – embeddable SVG badge
 
 Example badge usage:
