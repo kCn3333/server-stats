@@ -27,6 +27,8 @@ jobs:
         with:
           context: .
           push: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           tags: |
             kcn333/server-stats:latest
             kcn333/server-stats:${{ github.sha }}
