@@ -10,3 +10,5 @@ services:
       - /sys:/sys:ro
     security_opt:
       - no-new-privileges:true
+    environment:
+      - ALLOWED_CORS_SUFFIX=${your_domain_suffix_here}  # e.g., .kcn333.com
