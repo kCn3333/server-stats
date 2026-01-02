@@ -11,6 +11,6 @@ async def cors_middleware(request: Request, call_next):
     if origin and origin.endswith(ALLOWED_SUFFIX):
         response.headers["Access-Control-Allow-Origin"] = origin
         response.headers["Vary"] = "Origin"
-        response.headers["Access-Control-Allow-Methods"] = "GET"
-        response.headers["Access-Control-Allow-Headers"] = "Accept"
+        response.headers["Access-Control-Allow-Methods"] = "GET, OPTIONS"
+        response.headers["Access-Control-Allow-Headers"] = "Accept, Content-Type"
     return response
