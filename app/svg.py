@@ -1,3 +1,8 @@
+def get_status_color(value, warn=70, crit=85):
+    if value < warn: return "#2ecc71"
+    if value < crit: return "#f1c40f"
+    return "#e74c3c"
+
 def render_svg(metrics: dict) -> str:
     cpu = metrics["cpu"]["percent"]
     ram = metrics["ram"]["percent"]
