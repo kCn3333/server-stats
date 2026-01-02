@@ -60,7 +60,7 @@ Built and published automatically via GitHub Actions:
 Docker image: `kcn333/server-stats`
 
 ## Quick Start
-
+docker-compose.yml:
 ```yaml
 services:
   server-stats:
