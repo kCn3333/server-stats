@@ -1,8 +1,6 @@
-version: "3.9"
-
 services:
   server-stats:
-    build: .
+    image: kcn333/server-stats:latest
     container_name: server-stats
     restart: unless-stopped
     ports:
@@ -10,3 +8,5 @@ services:
     volumes:
       - /proc:/host/proc:ro
       - /sys:/sys:ro
+    security_opt:
+      - no-new-privileges:true
