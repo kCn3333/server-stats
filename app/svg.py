@@ -15,7 +15,7 @@ def render_svg(metrics: dict) -> str:
         }}
       </style>
       
-      <rect width="460" height="90" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <rect width="460" height="90" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
       
       <circle cx="25" cy="30" r="4" fill="#2ecc71">
         <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
