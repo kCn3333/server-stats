@@ -50,8 +50,8 @@ JSON:
 ## Design goals
 - Minimal CPU & memory usage
 - No agents, no background loops
-- Read-only access to host (/proc, /sys)
-- Edge-cached via Cloudflare (s-maxage=15)
+- Read-only access to host (`/proc`, `/sys`)
+- Edge-cached via Cloudflare (`s-maxage=15`)
 - Restricted CORS (suffix-based, configurable)
 
 ## Deployment
