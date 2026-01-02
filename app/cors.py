@@ -1,6 +1,7 @@
+import os
 from fastapi import Request, Response
 
-ALLOWED_SUFFIX = ".kcn333.com"
+ALLOWED_SUFFIX = os.getenv("ALLOWED_CORS_SUFFIX")
 
 def cors_middleware(request: Request, response: Response):
     origin = request.headers.get("origin")
