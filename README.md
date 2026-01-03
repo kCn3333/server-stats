@@ -3,10 +3,10 @@
 ![Build](https://github.com/kCn3333/server-stats/actions/workflows/docker.yml/badge.svg)
 ![Docker Pulls](https://img.shields.io/docker/pulls/kcn333/server-stats)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-blue)
 ---
 
-## What it does
+## Features
 
 - Exposes basic host metrics via HTTP:
   - uptime
